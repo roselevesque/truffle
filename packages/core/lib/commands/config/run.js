@@ -1,3 +1,4 @@
+const userLevelSettings = ["analytics"];
 /**
  * run config commands to get/set Truffle config options
  * @param {Object} options
@@ -142,7 +143,7 @@ const parse = function (args) {
 
   return {
     set,
-    userLevel: command.userLevelSettings.includes(key),
+    userLevel: userLevelSettings.includes(key),
     key,
     value
   };

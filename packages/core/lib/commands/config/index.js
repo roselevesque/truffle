@@ -25,7 +25,6 @@ const command = {
     ],
     allowedGlobalOptions: []
   },
-  userLevelSettings: ["analytics"],
   builder: {
     _: {
       type: "string"
