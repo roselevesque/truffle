@@ -1,35 +1,4 @@
-const command = {
-  command: "config",
-  description: "Set user-level configuration options",
-  help: {
-    usage:
-      "truffle config [--enable-analytics|--disable-analytics] [[<get|set> <key>] [<value-for-set>]]",
-    options: [
-      {
-        option: "--enable-analytics",
-        description: "Enable Truffle to send usage data to Google Analytics."
-      },
-      {
-        option: "--disable-analytics",
-        description:
-          "Disable Truffle's ability to send usage data to Google Analytics."
-      },
-      {
-        option: "get",
-        description: "Get a Truffle config option value."
-      },
-      {
-        option: "set",
-        description: "Set a Truffle config option value."
-      }
-    ],
-    allowedGlobalOptions: []
-  },
-  builder: {
-    _: {
-      type: "string"
-    }
-  },
+module.exports = {
+  run: require("./run"),
+  meta: require("./meta")
 };
-
-module.exports = command;
